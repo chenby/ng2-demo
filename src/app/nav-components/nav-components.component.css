@@ -1,0 +1,7 @@
+.nav ul li{
+	list-style: none;
+}
+.nav{
+	width: 200px;
+	float: left;
+}
