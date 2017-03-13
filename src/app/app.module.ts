@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { APP_BASE_HREF } from '@angular/common';
 
 import { AppComponent } from './app.component';
+
 import { RouterModule }   from '@angular/router';
 import { HeaderComponentsComponent } from './header-components/header-components.component';
 import { FooterComponentsComponent } from './footer-components/footer-components.component';
@@ -14,6 +15,7 @@ import { Artice2ComponentsComponent } from './artice2-components/artice2-compone
 import { ChildComponent } from './child/child.component';
 import { CheckModule } from './check/check.module'
 // import { ValidateDirective } from './check/validate.directive';
+
 import { AlertModule,ModalModule } from 'ng2-bootstrap';
 import {xm } from './app.component';
 

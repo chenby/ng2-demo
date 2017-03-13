@@ -27,6 +27,7 @@ export class ArticeComponentsComponent implements OnInit {
 
   ngOnInit() {
      
+
   }
 
 }

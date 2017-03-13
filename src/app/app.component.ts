@@ -1,3 +1,4 @@
+
 import { Router } from '@angular/router';
 import { Injectable, Injector, ComponentFactoryResolver, ComponentRef,ViewContainerRef } from '@angular/core';
 import { Component, ViewChild } from '@angular/core';
@@ -15,7 +16,6 @@ export class xm{
     
   }
 }
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -40,6 +40,5 @@ export class AppComponent {
     this.modalContentRef.destroy();
   }
   handle() {
-    
   }
 }

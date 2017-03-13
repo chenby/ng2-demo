@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 interface Model{
 	name:String,
 	phone:Number,
@@ -33,4 +34,5 @@ export class Artice2ComponentsComponent implements OnInit {
   // }
 	ngOnInit() {
 	  }
+
 }

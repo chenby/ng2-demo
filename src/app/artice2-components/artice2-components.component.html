@@ -1,42 +1,40 @@
 <div>
-  <form class="form" (ngSubmit)="onSubmit(aForm.value)" #aForm="ngForm">
-  	<label class="from-group">
+    <form class="form" (ngSubmit)="onSubmit(aForm.value)" #aForm="ngForm">
+        <label class="from-group">
   		form1 :
   		<div>
   			<input type="text" #name="ngModel" #spy class="form-control" id="name" 
        [(ngModel)]="model.name" minlength="3" name="name" required maxlength="10" (click)=show(name) >
   		</div> {{name.errors}}
   	</label>
-			  		<div [hidden]="name.valid || name.pristine"
-			             class="alert alert-danger">
-			             <div *ngIf="!!name.errors">
-			             	<div *ngIf="name.errors.required">
-				         		Name is required
-				         	</div>
-				         	<div *ngIf="name.errors.minlength">
-				         		<3
-				         	</div>	
-			             </div>
-			         		         	
-			         </div>
-  	<label class="from-group">
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            <div *ngIf="!!name.errors">
+                <div *ngIf="name.errors.required">
+                    Name is required
+                </div>
+                <div *ngIf="name.errors.minlength">
+                    <3 </div>
+                </div>
+
+            </div>
+            <label class="from-group">
   		form2 :
   		<div>
   			<input type="text" #phone="ngModel" class="form-control" id="phone" required
        [(ngModel)]="model.phone" name="phone" pattern="[A-z]{3}" (click)=show(phone) >
   		</div>
   	</label>
-    <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">
-        <div *ngIf="phone.errors">
-            <div *ngIf="phone.errors.required">
-                    Phone is required
+            <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">
+                <div *ngIf="phone.errors">
+                    <div *ngIf="phone.errors.required">
+                        Phone is required
+                    </div>
+                    <div *ngIf="phone.errors.pattern">
+                        no pattern
+                    </div>
+                </div>
             </div>
-            <div *ngIf="phone.errors.pattern">
-                no pattern
-            </div>
-        </div>
+
+            <button class="btn btn-default" type="submit">提交</button>
+    </form>
     </div>
-  	
-  	<button class="btn btn-default" type="submit" >提交</button>
-  </form>
-</div>
